@@ -8,7 +8,7 @@ and ordered items info.
 ## Features
 
 - fetching meal data from the backend server
-- Input validation for checkout data and sending to backend
+- Input validation for checkout data and sending that data to backend
 
 ## Technologies Used
 
