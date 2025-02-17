@@ -6,15 +6,15 @@ import { UserProgressContext } from "../context/UserProgressContext";
 
 const Header = () => {
     const { items } = useContext(CartContext);
-    const {showCart} = useContext(UserProgressContext);
+    const { showCart } = useContext(UserProgressContext);
     let totalCartItems = items.reduce(
         (totalNumberOfCartItems, item) =>
             (totalNumberOfCartItems += item.quantity),
         0
     );
 
-    function handleShowCart(){
-      showCart()
+    function handleShowCart() {
+        showCart();
     }
     return (
         <header id="main-header">
@@ -22,8 +22,21 @@ const Header = () => {
                 <img src={logoImg} alt="food app logo" />
                 <h1>ReactMeal</h1>
             </div>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#meals">Menu</a>
+                </li>
+                <li>
+                    <a href="#footer">About</a>
+                </li>
+            </ul>
             <nav>
-                <Button onClick={handleShowCart} textOnly>Cart({totalCartItems})</Button>
+                <Button onClick={handleShowCart} textOnly>
+                    Cart({totalCartItems})
+                </Button>
             </nav>
         </header>
     );
