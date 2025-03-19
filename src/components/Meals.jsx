@@ -6,7 +6,8 @@ const Meals = () => {
 
     useEffect(() => {
         async function fetchMeals() {
-            const res = await fetch("http://localhost:3000/meals");
+            // const res = await fetch("http://localhost:3000/meals");
+            const res = await fetch("./available-meals.json");
             const mealsData = await res.json();
             // console.log(mealsData);
             setLoadedMeals(mealsData);
