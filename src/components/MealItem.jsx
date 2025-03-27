@@ -9,7 +9,7 @@ const MealItem = ({ meal }) => {
     function handleAddMealToCart() {
         addItem(meal);
     }
-    console.log(meal.image)
+    // console.log(meal.image)
     return (
         <li className="meal-item">
             <article>

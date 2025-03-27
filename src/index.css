@@ -290,3 +290,20 @@ h1 {
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 764px) {
+    #main-header {
+        display: flex;
+        flex-direction: column; 
+    }
+    #main-header ul{
+        display: flex;
+        list-style: none;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+        width:100%;
+        justify-content: space-between;
+        flex-basis: 40%;
+       
+      }
+}

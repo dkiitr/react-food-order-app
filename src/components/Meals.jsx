@@ -9,7 +9,7 @@ const Meals = () => {
             // const res = await fetch("http://localhost:3000/meals");
             const res = await fetch("./available-meals.json");
             const mealsData = await res.json();
-            console.log(mealsData);
+            // console.log(mealsData);
             setLoadedMeals(mealsData);
         }
         fetchMeals();
