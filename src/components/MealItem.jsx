@@ -9,11 +9,13 @@ const MealItem = ({ meal }) => {
     function handleAddMealToCart() {
         addItem(meal);
     }
+    console.log(meal.image)
     return (
         <li className="meal-item">
             <article>
                 <img
-                    src={`http://localhost:3000/${meal.image}`}
+                    // src={`http://localhost:3000/${meal.image}`}
+                    src ={meal.image}
                     alt={meal.name}
                 />
                 <div>
